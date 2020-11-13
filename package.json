@@ -21,6 +21,7 @@
     "@types/styled-components": "^5.1.4",
     "babel-plugin-styled-components": "^1.11.1",
     "netlify-cli": "^2.68.5",
+    "node-fetch": "^2.6.1",
     "typescript": "^4.0.5"
   }
 }

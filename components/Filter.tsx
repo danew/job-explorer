@@ -20,5 +20,10 @@ export const Filter: React.FC = () => {
 
 const Layout = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  @media (min-width: 48rem) {
+    flex-direction: column;
+  }
 `;
