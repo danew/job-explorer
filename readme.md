@@ -13,7 +13,6 @@ We are building a jobs board website. We will be displaying developer jobs for s
 ## Getting started
 ```bash
 npm install
-npm run dev
+npm run bootstrap # setup FaunaDB
+npm start 
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
