@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import useSWR from 'swr'
-import { FilterList } from '@components/FilterList';
-import { useJobsContext } from '@components/JobsContext';
+import { FilterList } from '@components/FilterList'
+import { useJobsContext } from '@components/JobsContext'
 
 export const Filter: React.FC = () => {
-  const { setCity, setDescription } = useJobsContext();
-  const { data: cities } = useSWR('/.netlify/functions/cities');
-  const { data: descriptions } = useSWR('/.netlify/functions/job-descriptions');
+  const { setCity, setDescription } = useJobsContext()
+  const { data: cities } = useSWR('/.netlify/functions/cities')
+  const { data: descriptions } = useSWR('/.netlify/functions/job-descriptions')
 
   // TODO: Error handling
   return (
@@ -26,4 +26,4 @@ const Layout = styled.div`
   @media (min-width: 48rem) {
     flex-direction: column;
   }
-`;
+`

@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "bootstrap": "netlify dev:exec node ./scripts/bootstrap-fauna.js",
     "build": "next build",
     "dev": "next dev",
     "export": "next export",
     "start": "netlify dev"
   },
   "dependencies": {
+    "faunadb": "^3.0.1",
     "next": "10.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",

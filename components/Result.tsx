@@ -21,13 +21,13 @@ export const Result: React.FC = () => {
   const { city, description } = useJobsContext()
   const { data, error } = useSWR(() => {
     if (!city || !description) {
-      return null;
+      return null
     }
     const params = new URLSearchParams()
     params.set('location', city)
     params.set('description', description)
     return `/.netlify/functions/search-job?${params}`
-  });
+  })
   return (
     <Layout>
       {(!city || !description) && <Message>Select a City and a Description to get started!</Message>}

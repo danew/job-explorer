@@ -18,7 +18,7 @@ const Container = styled.div`
   flex-direction: column;
   min-height: 100vh;
   background-color: #f9f7f7;
-`;
+`
 
 const Main = styled.main`
   display: flex;
@@ -27,4 +27,4 @@ const Main = styled.main`
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
-`;
+`

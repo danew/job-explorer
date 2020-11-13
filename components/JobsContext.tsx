@@ -7,11 +7,11 @@ interface JobsInterface {
   setDescription: Function;
 }
 
-export const JobsContext = React.createContext<JobsInterface | undefined>(undefined);
+export const JobsContext = React.createContext<JobsInterface | undefined>(undefined)
 
 export const JobsContextProvider: React.FC = ({ children }) => {
-  const [city, setCity] = useState();
-  const [description, setDescription] = useState();
+  const [city, setCity] = useState()
+  const [description, setDescription] = useState()
   return (
     <JobsContext.Provider value={{ city, setCity, description, setDescription }}>
       { children }
@@ -20,9 +20,9 @@ export const JobsContextProvider: React.FC = ({ children }) => {
 }
 
 export const useJobsContext = () => {
-  const jobsContext = useContext(JobsContext);
+  const jobsContext = useContext(JobsContext)
   if (!jobsContext) {
-    throw new Error('useJobsContext must be used within the JobsContext.Provider');
+    throw new Error('useJobsContext must be used within the JobsContext.Provider')
   }
-  return jobsContext;
+  return jobsContext
 }

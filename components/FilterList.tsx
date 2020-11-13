@@ -39,4 +39,4 @@ const Layout = styled.div`
   input[type=radio] {
     margin-right: 0.5rem;
   }
-`;
+`

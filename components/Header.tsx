@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
 
 const HeaderBackground = styled.header`
   background-color: ${props => props.theme.blue};
-`;
+`
 
 const HeaderLayout = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ const HeaderLayout = styled.div`
   max-width: 56rem;
   margin-left: auto;
   margin-right: auto;
-`;
+`
 
 const Logo = styled.div`
   font-size: 1.8rem;
@@ -39,4 +39,4 @@ const Logo = styled.div`
     color: #f9f7f7;
     text-decoration: none;
   }
-`;
+`

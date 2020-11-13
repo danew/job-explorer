@@ -18,7 +18,7 @@ exports.handler = async () => {
     {
       name: 'Paris',
     },
-  ];
+  ]
   return {
     statusCode: 200,
     body: JSON.stringify(cities),

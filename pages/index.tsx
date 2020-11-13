@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Layout } from '@components/Layout'
 import { Filter } from '@components/Filter'
 import { Result } from '@components/Result'
-import { JobsContextProvider } from '@components/JobsContext';
+import { JobsContextProvider } from '@components/JobsContext'
 
 const HomePage: NextPage = () => {
   return (
@@ -18,7 +18,7 @@ const HomePage: NextPage = () => {
   )
 }
 
-export default HomePage;
+export default HomePage
 
 const JobsLayout = styled.div`
   display: flex;
@@ -28,4 +28,4 @@ const JobsLayout = styled.div`
   @media (min-width: 48rem) {
     flex-direction: row;
   }
-`;
+`
