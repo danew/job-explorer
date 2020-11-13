@@ -1,4 +1,4 @@
-exports.handler = () => {
+exports.handler = async () => {
   const descriptions = [
     {
       name: 'Javascript',
