@@ -1,30 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Job Explorer
 
-## Getting Started
+This project is a simple application that explores jobs found via [GitHub's Jobs API](https://jobs.github.com/api). It is built with [Next.js](https://nextjs.org/), [Fauna](https://fauna.com), and [Netlify](https://netlify.com/).
 
-First, run the development server:
+## Requirements
+We are building a jobs board website. We will be displaying developer jobs for several cities around the world
+ - The user should be able to select a city from this list (Chicago, San Francisco, Phoenix, London, Beijing, Paris)
+ - The user should be able to select a job description from this list (Javascript, Java, Python, React, Ruby, Go)
+ - When the user selects a city or selects a job description the list of jobs should update to match the user's selections
+ - There should be a frontend and a backend. The frontend should communicate to the backend via a REST API
+ - The backend should fetch the jobs from Github's public jobs API (eg. https://jobs.github.com/positions?description=javascript&location=san+francisco)
+ - The backend should have a database. The database should have one table called `searches` which stores a record of each job search. The `searches` table columns should include time, description, location and ip address of the user.
 
+## Getting started
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
